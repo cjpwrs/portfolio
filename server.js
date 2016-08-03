@@ -12,6 +12,6 @@ app.use(express.static('public'));
 // app.get('*', function(req, res) {
 //     res.sendFile(path.join( __dirname, './index.html'));
 // });
-app.listen(port, function() {
+app.listen(process.env.PORT || port, function() {
     console.log("Started server on port ", port);
 });
